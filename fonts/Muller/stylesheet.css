@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Muller';
+    src: url('subset-MullerBold.woff2') format('woff2'),
+        url('subset-MullerBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('subset-MullerMedium.woff2') format('woff2'),
+        url('subset-MullerMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('subset-MullerRegular.woff2') format('woff2'),
+        url('subset-MullerRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
