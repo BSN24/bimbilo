@@ -1068,6 +1068,66 @@ ul {
   display: none;
 }
 
+.breadcrumbs {
+  padding-bottom: 30px;
+}
+
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  font-family: "Muller", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.07px;
+  color: #222;
+  padding-right: 7px;
+  margin-right: 10px;
+}
+
+.breadcrumbs__item::after {
+  content: '/';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -5px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.07px;
+  color: #222;
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  display: block;
+  color: #0296cc;
+  text-decoration: underline;
+}
+
+.breadcrumbs__link:hover {
+  text-decoration: none;
+}
+
+span.breadcrumbs__link {
+  color: #222;
+  text-decoration: none;
+}
+
 .welcome {
   padding-top: 84px;
   padding-bottom: 90px;
