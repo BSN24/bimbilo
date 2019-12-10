@@ -1416,6 +1416,7 @@ ul {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  width: 100%;
 }
 
 .pagination__item {
@@ -2106,7 +2107,7 @@ ul {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   width: 100%;
-  max-width: 123px;
+  max-width: 33.333%;
 }
 
 .radio-btn__input {
