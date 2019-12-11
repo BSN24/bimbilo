@@ -1769,6 +1769,10 @@ ul {
   margin-bottom: 9px;
 }
 
+.main-search__field .form-group {
+  margin-bottom: 0;
+}
+
 .main-search__field-price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2108,6 +2112,7 @@ ul {
   flex: 1 1 auto;
   width: 100%;
   max-width: 33.333%;
+  margin-bottom: 0;
 }
 
 .radio-btn__input {
