@@ -7,6 +7,34 @@ $(document).ready(function () {
         responsive: true,
     });
 
+    //Кастомные selects для страницы company
+    $(".select-field").find(".select-field__input").selectric({
+        disableOnMobile: false,
+        nativeOnMobile: false,
+        responsive: true,
+    });
+
+    //Кастомный select выбора городов
+    (function () {
+
+        $(".selectric").click(function () {
+            $(".select-modified__wrap").removeClass("active");
+        });
+
+        $(".select-modified__label").on("click", function (e) {
+            e.stopPropagation();
+            $(this).siblings(".select-modified__wrap").toggleClass("active");
+        });
+
+        $(document).click(function (e){
+            var headerNav = $(".select-modified");
+
+            if (!headerNav.is(e.target) && headerNav.has(e.target).length === 0) {
+                $(".select-modified__wrap").removeClass("active");
+            }
+        });
+    })();
+
     //Mobile menu
     (function () {
         $(".hamburger-btn").click(function () {
@@ -64,7 +92,7 @@ $(document).ready(function () {
         draggable: false
     });
 
-    $(["data-fancybox"]).fancybox({
-
-    });
+    // $(["data-fancybox"]).fancybox({
+    //
+    // });
 });
