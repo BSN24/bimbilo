@@ -1,6 +1,8 @@
 $(document).ready(function () {
     "use strict";
 
+
+
     $(".page-search__select, .select-custom").selectric({
         disableOnMobile: false,
         nativeOnMobile: false,
@@ -17,22 +19,16 @@ $(document).ready(function () {
     //Кастомный select выбора городов
     (function () {
 
-        $(".selectric").click(function () {
-            $(".select-modified__wrap").removeClass("active");
+        $.fn.selectpicker.Constructor.BootstrapVersion = "4";
+        $(".selectpicker").selectpicker({
+            deselectAllText: "Удалить все",
+            selectAllText: "Выбрать все"
         });
 
-        $(".select-modified__label").on("click", function (e) {
-            e.stopPropagation();
-            $(this).siblings(".select-modified__wrap").toggleClass("active");
+        $(".bootstrap-select").on("click", function (e) {
+            $(this).find(".dropdown-menu").toggleClass("active");
         });
 
-        $(document).click(function (e){
-            var headerNav = $(".select-modified");
-
-            if (!headerNav.is(e.target) && headerNav.has(e.target).length === 0) {
-                $(".select-modified__wrap").removeClass("active");
-            }
-        });
     })();
 
     //Mobile menu

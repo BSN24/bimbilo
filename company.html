@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/fancybox.min.css">
-    <link rel="stylesheet" href="css/style.css?ver=4.3.3">
-    <link rel="stylesheet" href="css/company.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css?ver=7.0.2">
+    <link rel="stylesheet" href="css/company.css?ver=7.0.2">
 </head>
 
 <body>
@@ -103,59 +105,25 @@
         <section class="select-panel">
             <div class="container select-panel__inner">
                 <form class="select-panel__form" action="javascript:void(0);" method="GET">
-                    <div class="select-panel__item">
-                        <div class="select-modified">
-                            <div class="select-modified__label" tabindex="0">Город</div>
-                            <div class="select-modified__wrap">
-                                <div class="select-modified__container-input">
-                                    <input class="select-modified__input" type="search" name="city-search" placeholder="Название города">
-                                </div>
-                                <div class="select-modified__tags"><span class="select-modified__tags-item"><span>Абдулино</span>
-                                    <button class="fa fa-close btn-close" type="button"></button>
-                                    </span><span class="select-modified__tags-item"><span>Алатырь</span>
-                                    <button class="fa fa-close btn-close" type="button"></button>
-                                    </span><span class="select-modified__tags-item"><span>Азов</span>
-                                    <button class="fa fa-close btn-close" type="button"></button>
-                                    </span><span class="select-modified__tags-item"><span>Аксай</span>
-                                    <button class="fa fa-close btn-close" type="button"></button>
-                                    </span><span class="select-modified__tags-item"><span>Алатырь</span>
-                                    <button class="fa fa-close btn-close" type="button"></button>
-                                    </span>
-                                </div>
-                                <div class="select-modified__list">
-                                    <label class="select-modified__checkbox">
-                                        <input type="checkbox" name=""><span>Алексин</span>
-                                    </label>
-                                    <label class="select-modified__checkbox">
-                                        <input type="checkbox" name=""><span>Альметьевск</span>
-                                    </label>
-                                    <label class="select-modified__checkbox">
-                                        <input type="checkbox" name=""><span>Анапа</span>
-                                    </label>
-                                    <label class="select-modified__checkbox">
-                                        <input type="checkbox" name=""><span>Апатиты</span>
-                                    </label>
-                                    <label class="select-modified__checkbox">
-                                        <input type="checkbox" name=""><span>Арзамас</span>
-                                    </label>
-                                    <label class="select-modified__checkbox">
-                                        <input type="checkbox" name=""><span>Армавир</span>
-                                    </label>
-                                    <label class="select-modified__checkbox">
-                                        <input type="checkbox" name=""><span>Арсеньев</span>
-                                    </label>
-                                    <label class="select-modified__checkbox">
-                                        <input type="checkbox" name=""><span>Артем</span>
-                                    </label>
-                                    <label class="select-modified__checkbox">
-                                        <input type="checkbox" name=""><span>Абакан</span>
-                                    </label>
-                                    <label class="select-modified__checkbox">
-                                        <input type="checkbox" name=""><span>Азов</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="select-panel__item select-field">
+                        <select class="selectpicker" data-live-search="true" data-actions-box="true" multiple title="Город" id="select-city">
+                            <option>Абакан</option>
+                            <option>Азов</option>
+                            <option>Александров</option>
+                            <option>Алексин</option>
+                            <option>Альметьевск</option>
+                            <option>Анапа</option>
+                            <option>Ангарск</option>
+                            <option>Анжеро-Судженск</option>
+                            <option>Апатиты</option>
+                            <option>Арзамас</option>
+                            <option>Армавир</option>
+                            <option>Арсеньев</option>
+                            <option>Артем</option>
+                            <option>Архангельск</option>
+                            <option>Асбест</option>
+                            <option>Астрахань</option>
+                        </select>
                     </div>
                     <div class="select-panel__item select-field">
                         <select class="select-field__input" name="company">
@@ -248,6 +216,9 @@
                     </div>
                     <!--End pagination-->
                     <!--Start company-list-->
+                    <div class="company-search">
+                        <input class="company-search__input" type="search" name="company-search" placeholder="Поиск компании">
+                    </div>
                     <div class="company-list">
                         <div class="company-item">
                             <div class="company-item__image">
@@ -505,7 +476,8 @@
     <script src="js/lib/jquery.selectric.min.js"></script>
     <script src="js/lib/slick.min.js"></script>
     <script src="js/lib/fancybox.min.js"></script>
-    <script src="js/main.js?ver=4.3.3"></script>
+    <script src="js/lib/bootstrap-select.min.js"></script>
+    <script src="js/main.js?ver=7.0.2"></script>
 </body>
 
 </html>

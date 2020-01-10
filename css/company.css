@@ -94,7 +94,8 @@ span.breadcrumbs__link {
 }
 
 .select-field__input,
-.select-field .selectric {
+.select-field .selectric,
+.select-field .dropdown-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +121,37 @@ span.breadcrumbs__link {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.select-field .dropdown-toggle {
+  color: #757575 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid #a7a7a7 !important;
+  max-width: 100%;
+}
+
+.select-field .dropdown-toggle:focus {
+  outline: none !important;
+}
+
+.select-field .dropdown-toggle:active {
+  background-color: #fff !important;
+}
+
+.select-field .dropdown-toggle::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #757575;
+  border-bottom: none;
 }
 
 .select-field .selectric-items {
@@ -305,6 +337,48 @@ span.breadcrumbs__link {
   color: #0296cc;
 }
 
+.bootstrap-select {
+  font-family: "Muller", sans-serif !important;
+  width: 100% !important;
+}
+
+.bootstrap-select .bs-select-all {
+  display: none;
+}
+
+.bootstrap-select .actions-btn {
+  height: 35px;
+  border-radius: 3px !important;
+}
+
+.bootstrap-select .dropdown-menu.active {
+  display: block;
+}
+
+.bootstrap-select .dropdown-item {
+  font-size: 14px;
+  color: #757575 !important;
+}
+
+.bootstrap-select .dropdown-item.active,
+.bootstrap-select .dropdown-item:active {
+  background-color: #e6e6e6 !important;
+}
+
+.bootstrap-select .bs-searchbox input {
+  display: block;
+  max-width: 100%;
+  height: 33px;
+  padding: 0 11px;
+  margin-bottom: 2px;
+  border: 1px solid #ebebeb;
+  font-family: "Muller", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #979696;
+  border-radius: 2px;
+}
+
 .company-map {
   margin-bottom: 26px;
 }
@@ -344,8 +418,6 @@ span.breadcrumbs__link {
   font-family: "Muller", sans-serif;
   border: 1px solid #f2f2f2;
   background-color: #fff;
-  -webkit-box-shadow: 4px 3px 7px 1px rgba(0, 0, 0, 0.09);
-  box-shadow: 4px 3px 7px 1px rgba(0, 0, 0, 0.09);
   -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
   transition: -webkit-box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
@@ -498,6 +570,56 @@ span.breadcrumbs__link {
   margin-bottom: 5px;
 }
 
+.company-search__input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  padding: 0 18px;
+  border-radius: 5px;
+  border: 1px solid #f2f2f2;
+  font-family: "Muller", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: #757575;
+}
+
+.company-search__input::-webkit-input-placeholder {
+  color: #757575;
+}
+
+.company-search__input:-ms-input-placeholder {
+  color: #757575;
+}
+
+.company-search__input::-ms-input-placeholder {
+  color: #757575;
+}
+
+.company-search__input::placeholder {
+  color: #757575;
+}
+
+.company-search__input:focus {
+  border-color: #a7a7a7;
+}
+
+.company-search__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.company-search__input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.company-search__input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.company-search__input:focus::placeholder {
+  color: transparent;
+}
+
 .rating {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,6 +746,11 @@ span.breadcrumbs__link {
     width: 100%;
   }
 
+  .bootstrap-select .actions-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .company-list {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -663,5 +790,10 @@ span.breadcrumbs__link {
   .company-item__btn:first-child {
     margin-bottom: 5px;
     margin-right: auto;
+  }
+
+  .company-search__input {
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
