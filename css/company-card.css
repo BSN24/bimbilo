@@ -1,0 +1,482 @@
+.company-card {
+  padding-top: 21px;
+  font-family: "Muller", sans-serif;
+}
+
+.company-card__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.company-card__left {
+  max-width: 471px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-right: 30px;
+}
+
+.company-card__right {
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.company-card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.company-card__logo {
+  max-width: 112px;
+  width: 100%;
+  margin-right: 35px;
+}
+
+.company-card__logo img {
+  max-width: 100%;
+}
+
+.company-card__main-info {
+  max-width: 210px;
+}
+
+.company-card__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.1px;
+  margin-bottom: 6px;
+}
+
+.company-card__subtitle {
+  line-height: 1.25;
+  letter-spacing: 0.08px;
+  color: #757575;
+}
+
+.company-card__description {
+  max-width: 400px;
+  width: 100%;
+  line-height: 1.5;
+  letter-spacing: 0.08px;
+  color: #757575;
+  margin-bottom: 13px;
+}
+
+.company-card__section-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 0.09px;
+  margin-bottom: 8px;
+}
+
+.company-card__prices {
+  margin-bottom: 25px;
+}
+
+.company-card__prices-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 18px;
+}
+
+.company-card__prices-item:last-child {
+  margin-bottom: 0;
+}
+
+.company-card__prices-item-description {
+  max-width: 250px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-right: 9px;
+}
+
+.company-card__prices-item-name {
+  font-size: 13px;
+  line-height: 1.85;
+  letter-spacing: 0.07px;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 2px;
+}
+
+.company-card__prices-item-amount,
+.company-card__prices-item-date {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.07px;
+  color: #757575;
+  margin-bottom: 2px;
+}
+
+.company-card__prices-item-date {
+  margin-bottom: 0;
+}
+
+.company-card__prices-item-button {
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding-bottom: 6px;
+}
+
+.company-card__prices-item-btn {
+  max-width: 170px;
+  width: 100%;
+  height: 31px;
+  font-family: "Muller", sans-serif;
+  font-size: 14px;
+  line-height: 4.29;
+  text-align: left;
+  color: #0296cc;
+  border-width: 1px;
+}
+
+.company-card__write-saller-btn {
+  max-width: 180px;
+  height: 42px;
+  font-size: 14px;
+}
+
+.company-card__publication-date {
+  display: block;
+  padding-top: 25px;
+  margin-bottom: 13px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.08px;
+  color: #0296cc;
+}
+
+.company-card__contacts {
+  margin-bottom: 14px;
+}
+
+.company-card__contacts-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 9px;
+}
+
+.company-card__contacts-item:last-child {
+  margin-bottom: 0;
+}
+
+.company-card__contacts-icon {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  max-width: 12px;
+  width: 100%;
+  margin-right: 7px;
+}
+
+.company-card__contacts-icon .fa {
+  color: #0296cc;
+}
+
+.company-card__contacts-icon .fa-map-marker {
+  font-size: 13.5px;
+}
+
+.company-card__contacts-icon .fa-envelope-o {
+  font-size: 11.5px;
+}
+
+.company-card__contacts-location b {
+  display: block;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.08px;
+  color: #222;
+}
+
+.company-card__contacts-location p {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.07px;
+  color: #757575;
+  margin-bottom: 0;
+}
+
+.company-card__contacts-phone {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.07px;
+  color: #757575;
+}
+
+.company-card__contacts-phone span {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.company-card__contacts-email {
+  padding-top: 1px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.07px;
+  color: #0296cc;
+}
+
+.company-card__contacts-email a,
+.company-card__contacts-email span {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.company-card__contacts-email a:hover {
+  text-decoration: underline;
+}
+
+.company-card__lists-wrap .company-card__section-title {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.company-card__list {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.07px;
+  color: #757575;
+  margin-bottom: 9px;
+}
+
+.company-card__map {
+  height: 186px;
+}
+
+.company-card__map img {
+  height: 100%;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.reviews {
+  font-family: "Muller", sans-serif;
+  padding-top: 34px;
+}
+
+.reviews__title {
+  margin-bottom: 21px;
+}
+
+.reviews__list {
+  margin-bottom: 27px;
+}
+
+.reviews__item-wrap:last-child .reviews__item {
+  margin-bottom: 0;
+}
+
+.reviews__item {
+  max-width: 825px;
+  margin-bottom: 21px;
+}
+
+.reviews__item--response {
+  padding-left: 50px;
+  margin-bottom: 29px;
+}
+
+.reviews__item--response .reviews__text {
+  position: relative;
+}
+
+.reviews__item--response .reviews__text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -11px;
+  height: 100%;
+  width: 2px;
+  background-color: #0296cc;
+}
+
+.reviews__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.reviews__header .rating {
+  padding-bottom: 2px;
+}
+
+.reviews__name {
+  display: block;
+  margin-bottom: 0;
+  margin-right: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.09px;
+}
+
+.reviews__text {
+  font-size: 16px;
+  letter-spacing: 0.08px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.reviews__text p {
+  margin-bottom: 0;
+}
+
+.reviews__date {
+  display: block;
+  font-family: "Muller", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.06px;
+  color: #757575;
+}
+
+.reviews__form .form__input {
+  font-size: 14px;
+  padding-left: 16px;
+  border-color: #dcdcdc;
+}
+
+.reviews__form .form__input:not(.form__textarea) {
+  height: 44px;
+}
+
+.reviews__form-fields {
+  margin-bottom: 15px;
+}
+
+.reviews__form-btn {
+  width: 100%;
+  height: 44px;
+}
+
+@media screen and (max-width: 1200px) {
+  .company-card__left {
+    max-width: 340px;
+  }
+
+  .company-card__prices-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .company-card__prices-item-description {
+    margin-bottom: 10px;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .company-card__left {
+    max-width: 60%;
+  }
+
+  .company-card__right {
+    max-width: 40%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .company-card__wrap {
+    display: block;
+  }
+
+  .company-card__left {
+    max-width: 100%;
+  }
+
+  .company-card__right {
+    max-width: 100%;
+  }
+
+  .company-card__header {
+    margin-bottom: 25px;
+  }
+
+  .company-card__main-info {
+    max-width: 100%;
+  }
+
+  .company-card__description {
+    max-width: 100%;
+  }
+
+  .reviews__form-item {
+    margin-bottom: 15px;
+  }
+
+  .reviews__form-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .company-card__header {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .company-card__logo {
+    margin: 0 auto 15px;
+  }
+
+  .reviews__item--response {
+    padding-left: 20px;
+  }
+
+  .reviews__form-btn {
+    margin: 0 auto;
+  }
+}

@@ -88,7 +88,19 @@ $(document).ready(function () {
         draggable: false
     });
 
-    // $(["data-fancybox"]).fancybox({
-    //
-    // });
+    //Загрузка файла
+    var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+
+    $(".form__file-input").change(function (e) {
+
+        var file = $(this)[0].files[0];
+
+        if (file_api && file) {
+            var fileName = file.name;
+            $(".form__file-label").text(file.name);
+        } else {
+            $(".form__file-label").text("Добавить фото");
+        }
+
+    });
 });
