@@ -2639,6 +2639,257 @@ span.breadcrumbs__link {
   background-color: #0296cc;
 }
 
+.personal-account {
+  font-family: "Muller", sans-serif;
+  padding-top: 28px;
+  padding-bottom: 109px;
+}
+
+.personal-account__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.personal-account__block {
+  background-color: #f4f4f4;
+}
+
+.personal-account__left {
+  max-width: 279px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-right: 5px;
+}
+
+.personal-account__right {
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 54px 19px 20px;
+}
+
+.personal-account__title {
+  font-family: "Muller", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.09px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.personal-account__banner-link {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.personal-account__banner-link:last-child {
+  margin-bottom: 0;
+}
+
+.lk-user {
+  font-family: "Muller", sans-serif;
+  margin-bottom: 5px;
+  min-height: 350px;
+  background-color: #f4f4f4;
+}
+
+.lk-user__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 27px;
+  padding-right: 18px;
+  padding-bottom: 24px;
+}
+
+.lk-user__header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 27px;
+  width: calc(100% - 27px - 18px);
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
+.lk-user__photo {
+  max-width: 72px;
+  width: 100%;
+  height: 72px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-right: 22px;
+}
+
+.lk-user__photo img {
+  display: block;
+  max-width: 72px;
+  width: 100%;
+  height: 72px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+
+.lk-user__name {
+  font-family: "Muller", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.07px;
+  color: #757575;
+  text-transform: uppercase;
+}
+
+.lk-user__body {
+  padding: 27px 19px;
+}
+
+.lk-user__title {
+  font-family: "Muller", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.07px;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.lk-user-nav__item {
+  margin-bottom: 2px;
+}
+
+.lk-user-nav__item:last-child {
+  margin-bottom: 0;
+}
+
+.lk-user-nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 7px 20px;
+  color: #757575;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.lk-user-nav__link:hover,
+.lk-user-nav__link--active {
+  color: #757575;
+  background-color: #e1e1e1;
+}
+
+.lk-user-nav__icon {
+  font-size: 12px;
+  max-width: 13px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-right: 8px;
+  color: #757575;
+}
+
+.lk-company-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  min-height: 84px;
+  margin-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 27px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: solid 1px #dad9d9;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+
+.lk-company-card:hover {
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+}
+
+.lk-company-card:active {
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.lk-company-card__description {
+  font-family: "Muller", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.06px;
+  color: #757575 !important;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-right: 20px;
+}
+
+.lk-company-card__logo {
+  max-width: 100px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lk-company-card__title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.07px;
+  color: #222;
+  margin-bottom: 0;
+}
+
+.lk-company-card__address {
+  margin-bottom: 7px;
+  color: #757575;
+}
+
 .selectric-wrapper {
   position: relative;
   cursor: pointer;
@@ -2857,7 +3108,7 @@ span.breadcrumbs__link {
   padding-left: 25px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.1px) {
   .container {
     max-width: 960px;
   }
@@ -2920,6 +3171,14 @@ span.breadcrumbs__link {
 
   .page-footer__nav-link {
     font-size: 16px;
+  }
+
+  .personal-account {
+    padding-bottom: 80px;
+  }
+
+  .personal-account__sidebar {
+    display: none;
   }
 }
 
@@ -3235,6 +3494,54 @@ span.breadcrumbs__link {
     width: 100%;
     margin-bottom: 30px;
   }
+
+  .personal-account {
+    padding-top: 20px;
+    padding-bottom: 60px !important;
+  }
+
+  .personal-account__left {
+    max-width: 260px;
+  }
+
+  .personal-account__right {
+    padding: 20px 10px;
+  }
+
+  .personal-account__title {
+    margin-bottom: 15px;
+  }
+
+  .lk-user__header {
+    padding: 20px 15px;
+  }
+
+  .lk-user__header::after {
+    left: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .lk-user__photo {
+    margin-right: 15px;
+  }
+
+  .lk-user__name {
+    font-size: 12px;
+  }
+
+  .lk-user__body {
+    padding: 27px 15px;
+  }
+
+  .lk-user__title {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .lk-user-nav__link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -3421,6 +3728,19 @@ span.breadcrumbs__link {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .personal-account__main {
+    display: block;
+  }
+
+  .personal-account__left {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .personal-account__left .personal-account__banner {
+    display: none;
   }
 }
 
@@ -3642,6 +3962,31 @@ span.breadcrumbs__link {
   .page-footer__title {
     font-weight: bold;
     color: #000000;
+  }
+
+  .lk-company-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .lk-company-card__description {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .lk-company-card__logo {
+    margin-bottom: 15px;
+  }
+
+  .lk-company-card__rating {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
