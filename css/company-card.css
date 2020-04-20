@@ -154,11 +154,12 @@
 .company-card__prices-item-btn {
   max-width: 170px;
   width: 100%;
-  height: 31px;
+  height: 37px;
+  padding: 5px;
   font-family: "Muller", sans-serif;
   font-size: 14px;
-  line-height: 4.29;
-  text-align: left;
+  line-height: 1.1;
+  text-align: center;
   color: #0296cc;
   border-width: 1px;
 }
@@ -399,7 +400,7 @@
   height: 44px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.1px) {
   .company-card__left {
     max-width: 340px;
   }
